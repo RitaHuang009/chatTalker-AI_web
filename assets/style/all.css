@@ -1166,6 +1166,9 @@ mobile     -> max-width: 375px
 mobile_s   -> max-width: 320px
 ----------------------------*/
 @media (max-width: 768px) {
+  h1,
+  .fz-h1 {
+    font-size: 32px; }
   h2,
   .fz-h2 {
     font-size: 28px; }
@@ -1323,12 +1326,25 @@ mobile_s   -> max-width: 320px
 
 @media (max-width: 414px) {
   .header {
-    padding: 0 20px; }
+    padding: 0 20px;
+    background: #fff;
+    border-bottom: 3px solid #FFD153; }
     .header_box .logo {
       max-width: 130px; }
+  .planBanner_img {
+    width: 100%;
+    height: 495px;
+    background: url(https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/banner_sm.svg) no-repeat center center;
+    top: 50px; }
+  .planBanner_info {
+    margin: 50px 0; }
   .introduce_info {
     padding-left: 0px; }
   .start .d_flex {
-    padding: 300px 20px 50px; } }
+    padding: 300px 20px 50px; }
+  .choice .planDeta_item .planDeta_info {
+    padding: 0 16px; }
+  .choice .planDeta_item .NumBox_item {
+    padding: 24px 16px; } }
 
 /*# sourceMappingURL=all.css.map */
