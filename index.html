@@ -1,10 +1,30 @@
----
-title: 首頁
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    首頁
+  </title>
+  <!-- <link rel="stylesheet" href="./assets/style/flexslider.css"> -->
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container wrapper">
+      <div class="d_flex header_box">
+        <h1 class="logo"><a href="index.html"><img
+              src="https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/logo.png"
+              alt="chatTalker logo"></a></h1>
+        <div class="c_btn c_btn_secondary"><a href="planDescription.html">方案費用</a></div>
+      </div>
+    </div>
+  </header>
+
+  
 <!-- TODO: banner ------------------------>
 <div class="banner">
   <div class="container wrapper d_flex">
@@ -235,3 +255,19 @@ current: index
   </div>
   <!-- <div class="start_bg"></div> -->
 </div>
+
+    <div class="goTop" id="goTop">
+      <div class="goTop_btn">
+        <p class="fz-h5">TOP</p>
+      </div>
+    </div>
+    <footer class="footer">
+      <p class="font-default">© 2022 chatTalker. All Rights Reserved.</p>
+    </footer>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/jquery.flexslider.js"></script>
+    <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
