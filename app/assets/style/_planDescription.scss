@@ -1,0 +1,193 @@
+.planBanner_bg {
+    width: 100%;
+    height: 470px;
+    background: #f7f9fd;
+    border-radius: 0px 0px 0px 300px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -2;
+}
+
+.planBanner {
+    padding: 0 20px;
+    &_info {
+        color: $black-txt;
+        margin: 100px 0;
+        .fz-h1 {
+            line-height: 70px;
+        }
+        .font-default {
+            line-height: 24px;
+            padding-top: 16px;
+        }
+    }
+    &_img {
+        width: 885px;
+        height: 559px;
+        background: url(https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/banner.svg) no-repeat top
+            center;
+        position: absolute;
+        background-size: contain;
+        right: 0;
+        top: 0;
+        z-index: -1;
+    }
+}
+
+.choice {
+    padding: 200px 20px 0;
+    position: relative;
+    &::after {
+        content: "";
+        background: url(https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/ball03.svg) no-repeat center
+            right;
+        position: absolute;
+        background-size: cover;
+        bottom: 20%;
+        left: 0;
+        z-index: -2;
+        width: 94px;
+        height: 361px;
+    }
+    .choicePlan {
+        padding-top: 40px;
+    }
+    &_num {
+        align-items: center;
+        justify-content: center;
+        .c_btn {
+            margin: 0 8px;
+        }
+    }
+    .planDeta_box {
+        padding: 40px 0;
+        .d_flex {
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .planDeta_item {
+        background-color: $white;
+        box-shadow: 0 2px 10px 0 #00000014;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &:first-child {
+            margin-right: 21px;
+        }
+        .fz-h3 {
+            line-height: 35px;
+            padding-top: 16px;
+            text-align: center;
+            font-weight: $fw-bold;
+        }
+        .line {
+            margin-top: 16px;
+        }
+        .planDeta_info {
+            padding: 0 23px;
+        }
+        .font-default {
+            padding-top: 32px;
+            text-align: center;
+            color: $black-txt;
+        }
+        .NumBox {
+            padding-top: 32px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &_item {
+                padding: 24px;
+                border-radius: 12px;
+                background-color: $bg-gray;
+                text-align: center;
+            }
+            .fz-h2 {
+                padding-top: 8px;
+                span {
+                    padding-left: 8px;
+                }
+            }
+            .equarl {
+                margin: 0 21px;
+                font-size: 29px;
+                font-weight: $fw-bold;
+            }
+        }
+        .infoList {
+            padding-top: 32px;
+            &_item {
+                padding-left: 32px;
+                padding-bottom: 20px;
+                line-height: 24px;
+                position: relative;
+                &::before {
+                    content: "";
+                    width: 20px;
+                    height: 16px;
+                    background: url(https://hexschool.github.io/webLayoutTraining1st/chatTalker_images//icon_check.svg)
+                        no-repeat center center;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+            }
+        }
+        .c_btn {
+            margin-top: 32px;
+            max-width: 136px;
+            margin-bottom: 38px;
+        }
+    }
+}
+
+.faq {
+    padding: 100px 20px;
+    .faqList {
+        padding-top: 48px;
+        &_item {
+            border-radius: 12px;
+            background-color: $white;
+            box-shadow: 0 2px 10px 0 #00000014;
+            margin-bottom: 16px;
+        }
+        &_title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 32px;
+            &.active {
+                .fz-h5 {
+                    color: $primary;
+                }
+                .i_plus {
+                    background: url(https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/icon_minus.svg)
+                        no-repeat center center;
+                }
+            }
+            .fz-h5 {
+                line-height: 28px;
+                color: $black-txt;
+            }
+            .i_plus {
+                width: 20px;
+                height: 20px;
+                background: url(https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/icon_plus.svg)
+                    no-repeat center center;
+            }
+        }
+        &_info {
+            padding: 8px 32px 32px;
+            display: none;
+            &.show {
+                display: block;
+            }
+            .font-default {
+                padding-top: 0;
+            }
+        }
+    }
+}

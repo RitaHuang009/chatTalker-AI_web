@@ -1,0 +1,50 @@
+.c_btn{
+    border-radius: 22px;
+    min-width: 128px;
+    padding: 8px 32px;
+    line-height: 24px;
+    box-sizing: border-box;
+    text-align: center;
+    &_secondary{
+        background-color: $sub_primary;
+    }
+    &_primary{
+        background-color: $primary;
+    }
+    &_default{
+        border: 1px solid $primary;
+        a{
+            color: $primary !important;
+        }
+    }
+    &:hover{
+        opacity: 0.6;
+    }
+    a{
+        color: $white;
+    }
+}
+
+.c_title{
+    color: $black-txt;
+    font-size: $font-h2;
+    line-height: 46px;
+    text-align: center;
+    font-weight: $fw-bold;
+}
+
+.c_subTitle{
+    font-size: $font-h4;
+    line-height: 29px;
+    text-align: center;
+    color: $black-txt;
+    padding-top: 16px;
+}
+
+.line{
+    width: 100%;
+    border-top: 1px solid #DDDDDD;
+    margin-top: 24px;
+    margin-bottom: 0px;
+}
+

@@ -1,0 +1,328 @@
+.banner_bg {
+    width: 850px;
+    height: 100%;
+    background: url(https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/bg_home.svg) no-repeat top
+        center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -2;
+}
+
+.banner {
+    padding: 0 20px;
+    &::after {
+        content: "";
+        background: url(https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/ball01.svg) no-repeat center
+            right;
+        position: absolute;
+        bottom: -200px;
+        left: 0;
+        z-index: -2;
+        width: 138px;
+        height: 360px;
+    }
+    .d_flex {
+        justify-content: space-between;
+        align-items: center;
+    }
+    &_info {
+        width: 100%;
+        color: $black-txt;
+        .fz-5 {
+            color: $primary;
+            line-height: 26px;
+        }
+        .fz-h1 {
+            padding-top: 8px;
+            line-height: 70px;
+        }
+        .fz-4 {
+            padding-top: 16px;
+            line-height: 29px;
+        }
+    }
+    &_img {
+        width: 100%;
+        max-width: 532px;
+    }
+}
+
+.social {
+    padding: 200px 20px 0;
+    &_list {
+        padding-top: 48px;
+        .d_flex {
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    li {
+        width: calc((100% - 80px) / 3);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &:not(:last-child){
+            margin-right: 16px;
+        }
+        .social_icon {
+            max-width: 90px;
+            width: 100%;
+        }
+        .fz-h3 {
+            padding-top: 24px;
+            line-height: 42px;
+        }
+        .font-default {
+            padding-top: 24px;
+            text-align: center;
+        }
+    }
+}
+
+.person {
+    padding: 100px 20px 0;
+    position: relative;
+    &::after {
+        content: "";
+        background: url(https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/ball02.svg) no-repeat center
+            left;
+        position: absolute;
+        bottom: -199px;
+        right: 0px;
+        z-index: -2;
+        width: 210px;
+        height: 360px;
+    }
+    .person_list {
+        padding-top: 48px;
+        .d_flex {
+            justify-content: space-between;
+            align-items: center;
+        }
+        li {
+            width: calc((100% - 16px) / 4);
+            height: 388px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 12px;
+            background-color: $white;
+            box-shadow: 0 2px 10px 0 #00000014;
+            &:not(:last-child) {
+                margin-right: 16px;
+            }
+        }
+        .person_img {
+            width: 100%;
+            img {
+                border-radius: 12px 12px 0 0;
+            }
+        }
+        .person_info {
+            padding: 16px 0 24px;
+            width: 100%;
+            p {
+                padding: 0 16px;
+                text-align: center;
+            }
+            .person_list_title {
+                color: $primary;
+                line-height: 24px;
+                font-weight: $fw-bold;
+            }
+            .person_list_txt {
+                padding-top: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+}
+
+.introduce {
+    padding: 100px 20px 0;
+    .d_flex {
+        align-items: center;
+        justify-content: space-between;
+    }
+    &_list {
+        width: 100%;
+        .d_flex {
+            flex-wrap: wrap;
+        }
+        li {
+            display: flex;
+            flex-direction: column;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px 0 #00000014;
+            padding: 32px;
+            margin-bottom: 28px;
+            max-width: 230px;
+            min-height: 280px;
+            box-sizing: border-box;
+            .introduce_icon {
+                width: 86px;
+                height: 86px;
+                border-radius: 100%;
+                box-shadow: 0 2px 10px 0 #00000014;
+                background-color: $white;
+                &.icon_01 {
+                    background: url(https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/icon01.svg)
+                        no-repeat center center;
+                    background-size: 52px;
+                }
+                &.icon_02 {
+                    background: url(https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/icon02.svg)
+                        no-repeat center center;
+                    background-size: 52px;
+                }
+                &.icon_03 {
+                    background: url(https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/icon03.svg)
+                        no-repeat center center;
+                    background-size: 52px;
+                }
+                &.icon_04 {
+                    background: url(https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/icon04.svg)
+                        no-repeat center center;
+                    background-size: 52px;
+                }
+            }
+            .fz-h5 {
+                padding-top: 24px;
+            }
+            .font-default {
+                min-width: 166px;
+                line-height: 24px;
+            }
+            &:nth-child(odd) {
+                margin-right: 20px;
+            }
+        }
+    }
+    &_info {
+        width: 100%;
+        padding-left: 60px;
+        .c_title {
+            text-align: left;
+        }
+        .fz-h5 {
+            padding-top: 16px;
+            line-height: 26px;
+        }
+        .c_btn {
+            margin-top: 24px;
+        }
+    }
+}
+
+.evaluate {
+    padding: 100px 20px 100px;
+    position: relative;
+    &::after {
+        content: "";
+        background: url(https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/ball03.svg) no-repeat center
+            left;
+        background-size: 150px;
+        position: absolute;
+        top: 130px;
+        left: 100px;
+        z-index: -2;
+        width: 150px;
+        height: 150px;
+    }
+    &_list {
+        max-width: 1100px;
+        padding-top: 48px;
+        .d_flex {
+            align-items: center;
+        }
+        .evaluate_card {
+            position: relative;
+            margin: 50px 0 20px;
+            background-color: $white;
+            box-shadow: 0 2px 10px 0 #00000014;
+            border-radius: 12px 12px 0 0;
+            padding: 30px 20px 20px;
+            min-width: 352px;
+            box-sizing: border-box;
+            &:first-child {
+                margin-left: 5px;
+            }
+        }
+        .evaluate_img {
+            position: absolute;
+            top: -50px;
+            left: 20px;
+            width: 80px;
+            height: 80px;
+            border-radius: 100%;
+            &.person01 {
+                background: url(https://hexschool.github.io/webLayoutTraining1st/chatTalker_images//user01.jpg)
+                    no-repeat center center;
+                background-size: 80px;
+            }
+            &.person02 {
+                background: url(https://hexschool.github.io/webLayoutTraining1st/chatTalker_images//user02.jpg)
+                    no-repeat center center;
+                background-size: 80px;
+            }
+            &.person03 {
+                background: url(https://hexschool.github.io/webLayoutTraining1st/chatTalker_images//user03.jpg)
+                    no-repeat center center;
+                background-size: 80px;
+            }
+        }
+        .font-default {
+            line-height: 24px;
+            padding-top: 12px;
+        }
+        .evaluate_name {
+            padding-top: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .font-default {
+                padding-top: 0;
+                width: 100%;
+            }
+            .star_icon_box {
+                display: flex;
+                justify-content: flex-end;
+                width: 100%;
+            }
+            .star_icon {
+                width: 20px;
+                height: 20px;
+                margin-left: 2px;
+                &.active {
+                    background: url(https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/icon_star.svg)
+                        no-repeat center center;
+                }
+            }
+        }
+    }
+}
+
+.start {
+    position: relative;
+    .d_flex {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 320px;
+        .c_btn{
+            margin-top: 48px;
+        }
+    }
+    &.start_bg {
+        // position: absolute;
+        width: 100%;
+        height: 503px;
+        background: url(https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/home_footer.svg) no-repeat
+            center center;
+        background-size: cover;
+        top: 0;
+        // z-index: -2;
+    }
+}
+
+

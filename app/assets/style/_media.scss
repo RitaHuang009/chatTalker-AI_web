@@ -1,0 +1,226 @@
+/*----------------------------
+desktop    -> max-width: 992px
+pad        -> max-width: 768px
+mobile_lg  -> max-width: 414px
+mobile     -> max-width: 375px
+mobile_s   -> max-width: 320px
+----------------------------*/
+
+@include pad {
+    h2,
+    .fz-h2 {
+        font-size: 28px; 
+    }
+    h4,
+    .fz-h4 {
+        font-size: $font-h5; //18px
+    }
+    h5,
+    .fz-h5 {
+        font-size: $font-size-base; //16px
+    }
+    h6,
+    .fz-h6 {
+        font-size: $font-h7; //12px
+        line-height: 18px;
+    }
+    .font-default {
+        font-size: $font-h6;
+        line-height: 26px;
+    }
+}
+
+/*-----------------TODO: index-----------------------*/
+
+@media (max-width: 1100px) {
+    .introduce {
+        .d_flex {
+            flex-direction: column;
+            .introduce_list {
+                order: 2;
+                .d_flex {
+                    flex-direction: row;
+                }
+            }
+        }
+        &_info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding-left: 0px;
+            padding-bottom: 30px;
+            .c_title {
+                text-align: center;
+            }
+        }
+        &_list {
+            width: 60%;
+        }
+    }
+}
+
+@include desktop{
+     // planDescripition
+    .choice {
+        &_num {
+            overflow-x: auto;
+            justify-content: unset;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+            .c_btn {
+                margin: 0px 8px 10px 8px;
+                padding: 10px;
+            }
+        }
+        .planDeta_box {
+            .d_flex {
+                flex-direction: column;
+            }
+        }
+        .planDeta_item {
+            width: 100%;
+            &:first-child {
+                margin-right: 0px;
+                margin-bottom: 40px;
+            }
+            .infoList {
+                padding-top: 32px;
+                &_item {
+                    font-size: $font-h7;
+                    &::before {
+                        background-size: 16px;
+                        top: 4px;
+                    }
+                }
+            }
+            .NumBox {
+                padding-top: 24px;
+                .fz-h2 {
+                    span {
+                        padding-left: 4px;
+                    }
+                }
+                .equarl {
+                    margin: 0 6px;
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}
+
+@include pad {
+    // index
+    .banner_bg {
+        display: none;
+    }
+    .banner {
+        &::after {
+            background-size: cover;
+            bottom: -350px;
+            width: 49px;
+            height: 126px;
+        }
+        .d_flex {
+            flex-direction: column;
+        }
+        &_img {
+            position: relative;
+            &::after {
+                content: "";
+                width: 100%;
+                height: 100%;
+                background: url(https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/bg_home_sm.svg)
+                    no-repeat center center;
+                position: absolute;
+                background-size: contain;
+                bottom: 0;
+                left: 0;
+                z-index: -2;
+            }
+        }
+    }
+    .social {
+        &_list {
+            .d_flex {
+                flex-direction: column;
+            }
+        }
+        li {
+            width: 100%;
+            &:not(:last-child) {
+                margin-right: 0px;
+                margin-bottom: 40px;
+            }
+        }
+    }
+    .person {
+        .person_list {
+            .d_flex {
+                flex-direction: column;
+            }
+            li {
+                width: 100%;
+                height: 100%;
+                &:not(:last-child) {
+                    margin-right: 0px;
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+    .introduce {
+        &_list {
+            width: 100%;
+            .d_flex {
+                flex-wrap: wrap;
+            }
+            li {
+                width: 100%;
+                max-width: 100%;
+                &:nth-child(odd) {
+                    margin-right: 0px;
+                }
+            }
+        }
+        &_info {
+            width: 100%;
+            padding-left: 60px;
+            .c_title {
+                text-align: left;
+            }
+            .fz-h5 {
+                padding-top: 16px;
+                line-height: 26px;
+            }
+            .c_btn {
+                margin-top: 24px;
+            }
+        }
+    }    
+}
+
+@include mobile_lg{
+    .header{
+        padding: 0 20px;
+        &_box{
+            .logo{
+                max-width: 130px;
+            }
+        }
+    }
+
+    .introduce {
+        &_info {
+            padding-left: 0px;
+        }
+    }
+
+    .start {
+        .d_flex {
+            padding: 300px 20px 50px;
+        }
+    }
+}
