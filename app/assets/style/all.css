@@ -1,0 +1,1744 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* color-variables */
+/* font-variables */
+*,
+*:befor,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, "Noto Sans TC", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #221E1F;
+}
+
+a:hover {
+  color: #56C4C5;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.wrapper {
+  max-width: 1088px;
+  margin: 0 auto;
+}
+
+.w_100 {
+  width: 100%;
+}
+
+.h_100 {
+  height: 100%;
+}
+
+h1,
+.fz-h1 {
+  font-size: 48px;
+}
+
+h2,
+.fz-h2 {
+  font-size: 32px;
+}
+
+h3,
+.fz-h3 {
+  font-size: 24px;
+}
+
+h4,
+.fz-h4 {
+  font-size: 20px;
+}
+
+h5,
+.fz-h5 {
+  font-size: 18px;
+}
+
+h6,
+.fz-h6 {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.fz-h7 {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.font-default {
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 2px;
+  color: #747474;
+  padding-top: 20px;
+  text-align: justify;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+.fw-medium {
+  font-weight: 500;
+}
+
+.d_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.d_none {
+  display: none;
+}
+
+.flex_row_a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.flex_col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.row_center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex_row_cc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex_row_eb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex_row_cb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.position_re {
+  position: relative;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #56C4C5;
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #FF5D50;
+}
+
+::-moz-selection {
+  background-color: #56C4C5;
+  color: #fff;
+}
+
+::selection {
+  background-color: #56C4C5;
+  color: #fff;
+}
+
+.mt40 {
+  margin-top: 40px;
+}
+
+.overflow-hid {
+  overflow: hidden;
+}
+
+.order_2 {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.txt_primary {
+  color: #56C4C5;
+}
+
+.c_btn {
+  border-radius: 22px;
+  min-width: 128px;
+  padding: 8px 32px;
+  line-height: 24px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+}
+
+.c_btn_secondary {
+  background-color: #FF5D50;
+}
+
+.c_btn_primary {
+  background-color: #56C4C5;
+}
+
+.c_btn_default {
+  border: 1px solid #56C4C5;
+}
+
+.c_btn_default a {
+  color: #56C4C5 !important;
+}
+
+.c_btn:hover {
+  opacity: 0.6;
+}
+
+.c_btn a {
+  color: #fff;
+}
+
+.c_title {
+  color: #221E1F;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.c_subTitle {
+  font-size: 20px;
+  line-height: 29px;
+  text-align: center;
+  color: #221E1F;
+  padding-top: 16px;
+}
+
+.line {
+  width: 100%;
+  border-top: 1px solid #DDDDDD;
+  margin-top: 24px;
+  margin-bottom: 0px;
+}
+
+.header {
+  padding: 0 40px;
+}
+
+.header_box {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 24px 0;
+}
+
+.header_box .logo {
+  max-width: 218px;
+}
+
+.footer {
+  padding: 16px 0;
+  background-color: #F5F5F5;
+}
+
+.footer .font-default {
+  padding: 0;
+  line-height: 24px;
+  text-align: center;
+}
+
+.goTop {
+  position: fixed;
+  z-index: 101;
+  bottom: 200px;
+  right: 0px;
+  padding: 10px;
+  opacity: 0;
+  -webkit-transition: 0.4s 0.2s;
+  transition: 0.4s 0.2s;
+}
+
+.goTop_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #56C4C5;
+  width: 71px;
+  height: 71px;
+  border-radius: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  color: #fff;
+}
+
+.goTop_btn:hover {
+  opacity: 0.7;
+  -webkit-transition: 0.4s 0.2s;
+  transition: 0.4s 0.2s;
+}
+
+/*
+ * jQuery FlexSlider v2.7.2
+ * https://www.woocommerce.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 and later license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ *
+ */
+/* ====================================================================================================================
+ * FONT-FACE
+ * ====================================================================================================================*/
+@font-face {
+  font-family: "flexslider-icon";
+  src: url("fonts/flexslider-icon.eot");
+  src: url("fonts/flexslider-icon.eot?#iefix") format("embedded-opentype"), url("fonts/flexslider-icon.woff") format("woff"), url("fonts/flexslider-icon.ttf") format("truetype"), url("fonts/flexslider-icon.svg#flexslider-icon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ====================================================================================================================
+   * RESETS
+   * ====================================================================================================================*/
+.flex-container a:hover,
+.flex-slider a:hover {
+  outline: none;
+}
+
+.slides,
+.slides > li,
+.flex-control-nav,
+.flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.flex-pauseplay span {
+  text-transform: capitalize;
+}
+
+/* ====================================================================================================================
+   * BASE STYLES
+   * ====================================================================================================================*/
+.flexslider {
+  margin: 0;
+  padding: 0;
+}
+
+.flexslider .slides > li {
+  display: none;
+}
+
+.flexslider .slides img {
+  width: 100%;
+  display: block;
+}
+
+.flexslider .slides:after {
+  content: "\0020";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+html[xmlns] .flexslider .slides {
+  display: block;
+}
+
+* html .flexslider .slides {
+  height: 1%;
+}
+
+.no-js .flexslider .slides > li:first-child {
+  display: block;
+}
+
+/* ====================================================================================================================
+   * DEFAULT THEME
+   * ====================================================================================================================*/
+.flexslider {
+  margin: 0 0 60px;
+  position: relative;
+  zoom: 1;
+  border-radius: 4px;
+}
+
+.flexslider .slides {
+  zoom: 1;
+}
+
+.flexslider .slides img {
+  height: auto;
+}
+
+.flex-viewport {
+  max-height: 2000px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.loading .flex-viewport {
+  max-height: 300px;
+}
+
+@-moz-document url-prefix() {
+  .loading .flex-viewport {
+    max-height: none;
+  }
+}
+
+.carousel li {
+  margin-right: 5px;
+}
+
+.flex-direction-nav {
+  display: none;
+  *height: 0;
+}
+
+.flex-direction-nav a {
+  text-decoration: none;
+  display: none;
+  width: 40px;
+  height: 40px;
+  margin: -20px 0 0;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  overflow: hidden;
+  opacity: 0;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.flex-direction-nav a:before {
+  font-size: 40px;
+  display: none;
+  content: "\f001";
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.flex-direction-nav a.flex-next:before {
+  content: "\f002";
+}
+
+.flex-direction-nav .flex-prev {
+  left: -50px;
+}
+
+.flex-direction-nav .flex-next {
+  right: -50px;
+  text-align: right;
+}
+
+.flexslider:hover .flex-direction-nav .flex-prev {
+  opacity: 0.7;
+  left: 10px;
+}
+
+.flexslider:hover .flex-direction-nav .flex-prev:hover {
+  opacity: 1;
+}
+
+.flexslider:hover .flex-direction-nav .flex-next {
+  opacity: 0.7;
+  right: 10px;
+}
+
+.flexslider:hover .flex-direction-nav .flex-next:hover {
+  opacity: 1;
+}
+
+.flex-direction-nav .flex-disabled {
+  opacity: 0 !important;
+  filter: alpha(opacity=0);
+  cursor: default;
+  z-index: -1;
+}
+
+.flex-pauseplay a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  opacity: 0.8;
+  z-index: 10;
+  overflow: hidden;
+  cursor: pointer;
+  color: #000;
+}
+
+.flex-pauseplay a:before {
+  font-family: "flexslider-icon";
+  font-size: 20px;
+  display: inline-block;
+  content: "\f004";
+}
+
+.flex-pauseplay a:hover {
+  opacity: 1;
+}
+
+.flex-pauseplay a.flex-play:before {
+  content: "\f003";
+}
+
+.flex-control-nav {
+  width: 100%;
+  position: absolute;
+  bottom: -40px;
+  text-align: center;
+}
+
+.flex-control-nav li {
+  margin: 0 6px;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+
+.flex-control-paging li a {
+  width: 11px;
+  height: 11px;
+  display: block;
+  background: #DDDDDD;
+  cursor: pointer;
+  text-indent: -9999px;
+  border-radius: 20px;
+}
+
+.flex-control-paging li a:hover {
+  background: #333;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.flex-control-paging li a.flex-active {
+  width: 16px;
+  background: #FFD153;
+  cursor: default;
+}
+
+.flex-control-thumbs {
+  margin: 5px 0 0;
+  position: static;
+  overflow: hidden;
+}
+
+.flex-control-thumbs li {
+  width: 25%;
+  float: left;
+  margin: 0;
+}
+
+.flex-control-thumbs img {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: 0.7;
+  cursor: pointer;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.flex-control-thumbs img:hover {
+  opacity: 1;
+}
+
+.flex-control-thumbs .flex-active {
+  opacity: 1;
+  cursor: default;
+}
+
+/* ====================================================================================================================
+   * RESPONSIVE
+   * ====================================================================================================================*/
+.banner_bg {
+  width: 850px;
+  height: 100%;
+  background: url(https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/bg_home.svg) no-repeat top center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -2;
+}
+
+.banner {
+  padding: 0 20px;
+}
+
+.banner::after {
+  content: "";
+  background: url(https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/ball01.svg) no-repeat center right;
+  position: absolute;
+  bottom: -200px;
+  left: 0;
+  z-index: -2;
+  width: 138px;
+  height: 360px;
+}
+
+.banner .d_flex {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner_info {
+  width: 100%;
+  color: #221E1F;
+}
+
+.banner_info .fz-5 {
+  color: #56C4C5;
+  line-height: 26px;
+}
+
+.banner_info .fz-h1 {
+  padding-top: 8px;
+  line-height: 70px;
+}
+
+.banner_info .fz-4 {
+  padding-top: 16px;
+  line-height: 29px;
+}
+
+.banner_img {
+  width: 100%;
+  max-width: 532px;
+}
+
+.social {
+  padding: 200px 20px 0;
+}
+
+.social_list {
+  padding-top: 48px;
+}
+
+.social_list .d_flex {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social li {
+  width: calc((100% - 80px) / 3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social li:not(:last-child) {
+  margin-right: 16px;
+}
+
+.social li .social_icon {
+  max-width: 90px;
+  width: 100%;
+}
+
+.social li .fz-h3 {
+  padding-top: 24px;
+  line-height: 42px;
+}
+
+.social li .font-default {
+  padding-top: 24px;
+  text-align: center;
+}
+
+.person {
+  padding: 100px 20px 0;
+  position: relative;
+}
+
+.person::after {
+  content: "";
+  background: url(https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/ball02.svg) no-repeat center left;
+  position: absolute;
+  bottom: -199px;
+  right: 0px;
+  z-index: -2;
+  width: 210px;
+  height: 360px;
+}
+
+.person .person_list {
+  padding-top: 48px;
+}
+
+.person .person_list .d_flex {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.person .person_list li {
+  width: calc((100% - 16px) / 4);
+  height: 388px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 12px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 2px 10px 0 #00000014;
+          box-shadow: 0 2px 10px 0 #00000014;
+}
+
+.person .person_list li:not(:last-child) {
+  margin-right: 16px;
+}
+
+.person .person_list .person_img {
+  width: 100%;
+}
+
+.person .person_list .person_img img {
+  border-radius: 12px 12px 0 0;
+}
+
+.person .person_list .person_info {
+  padding: 16px 0 24px;
+  width: 100%;
+}
+
+.person .person_list .person_info p {
+  padding: 0 16px;
+  text-align: center;
+}
+
+.person .person_list .person_info .person_list_title {
+  color: #56C4C5;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.person .person_list .person_info .person_list_txt {
+  padding-top: 16px;
+  line-height: 24px;
+}
+
+.introduce {
+  padding: 100px 20px 0;
+}
+
+.introduce .d_flex {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.introduce_list {
+  width: 100%;
+}
+
+.introduce_list .d_flex {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.introduce_list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 12px;
+  -webkit-box-shadow: 0 2px 10px 0 #00000014;
+          box-shadow: 0 2px 10px 0 #00000014;
+  padding: 32px;
+  margin-bottom: 28px;
+  max-width: 230px;
+  min-height: 280px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.introduce_list li .introduce_icon {
+  width: 86px;
+  height: 86px;
+  border-radius: 100%;
+  -webkit-box-shadow: 0 2px 10px 0 #00000014;
+          box-shadow: 0 2px 10px 0 #00000014;
+  background-color: #fff;
+}
+
+.introduce_list li .introduce_icon.icon_01 {
+  background: url(https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/icon01.svg) no-repeat center center;
+  background-size: 52px;
+}
+
+.introduce_list li .introduce_icon.icon_02 {
+  background: url(https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/icon02.svg) no-repeat center center;
+  background-size: 52px;
+}
+
+.introduce_list li .introduce_icon.icon_03 {
+  background: url(https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/icon03.svg) no-repeat center center;
+  background-size: 52px;
+}
+
+.introduce_list li .introduce_icon.icon_04 {
+  background: url(https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/icon04.svg) no-repeat center center;
+  background-size: 52px;
+}
+
+.introduce_list li .fz-h5 {
+  padding-top: 24px;
+}
+
+.introduce_list li .font-default {
+  min-width: 166px;
+  line-height: 24px;
+}
+
+.introduce_list li:nth-child(odd) {
+  margin-right: 20px;
+}
+
+.introduce_info {
+  width: 100%;
+  padding-left: 60px;
+}
+
+.introduce_info .c_title {
+  text-align: left;
+}
+
+.introduce_info .fz-h5 {
+  padding-top: 16px;
+  line-height: 26px;
+}
+
+.introduce_info .c_btn {
+  margin-top: 24px;
+  max-width: 136px;
+}
+
+.evaluate {
+  padding: 100px 20px 100px;
+  position: relative;
+}
+
+.evaluate::after {
+  content: "";
+  background: url(https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/ball03.svg) no-repeat center left;
+  background-size: 150px;
+  position: absolute;
+  top: 130px;
+  left: 100px;
+  z-index: -2;
+  width: 150px;
+  height: 150px;
+}
+
+.evaluate_list {
+  max-width: 1100px;
+  padding-top: 48px;
+}
+
+.evaluate_list .d_flex {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.evaluate_list .evaluate_card {
+  position: relative;
+  margin: 50px 0 20px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 2px 10px 0 #00000014;
+          box-shadow: 0 2px 10px 0 #00000014;
+  border-radius: 12px 12px 0 0;
+  padding: 30px 20px 20px;
+  min-width: 352px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.evaluate_list .evaluate_card:first-child {
+  margin-left: 5px;
+}
+
+.evaluate_list .evaluate_img {
+  position: absolute;
+  top: -50px;
+  left: 20px;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+}
+
+.evaluate_list .evaluate_img.person01 {
+  background: url(https://hexschool.github.io/webLayoutTraining1st/chatTalker_images//user01.jpg) no-repeat center center;
+  background-size: 80px;
+}
+
+.evaluate_list .evaluate_img.person02 {
+  background: url(https://hexschool.github.io/webLayoutTraining1st/chatTalker_images//user02.jpg) no-repeat center center;
+  background-size: 80px;
+}
+
+.evaluate_list .evaluate_img.person03 {
+  background: url(https://hexschool.github.io/webLayoutTraining1st/chatTalker_images//user03.jpg) no-repeat center center;
+  background-size: 80px;
+}
+
+.evaluate_list .font-default {
+  line-height: 24px;
+  padding-top: 12px;
+}
+
+.evaluate_list .evaluate_name {
+  padding-top: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.evaluate_list .evaluate_name .font-default {
+  padding-top: 0;
+  width: 100%;
+}
+
+.evaluate_list .evaluate_name .star_icon_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+}
+
+.evaluate_list .evaluate_name .star_icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 2px;
+}
+
+.evaluate_list .evaluate_name .star_icon.active {
+  background: url(https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/icon_star.svg) no-repeat center center;
+}
+
+.start {
+  position: relative;
+}
+
+.start .d_flex {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 320px;
+}
+
+.start .d_flex .c_btn {
+  margin-top: 48px;
+}
+
+.start.start_bg {
+  width: 100%;
+  height: 503px;
+  background: url(https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/home_footer.svg) no-repeat center center;
+  background-size: cover;
+  top: 0;
+}
+
+.planBanner_bg {
+  width: 100%;
+  height: 470px;
+  background: #f7f9fd;
+  border-radius: 0px 0px 0px 300px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -2;
+}
+
+.planBanner {
+  padding: 0 20px;
+}
+
+.planBanner_info {
+  color: #221E1F;
+  margin: 100px 0;
+}
+
+.planBanner_info .fz-h1 {
+  line-height: 70px;
+}
+
+.planBanner_info .font-default {
+  line-height: 24px;
+  padding-top: 16px;
+}
+
+.planBanner_img {
+  width: 885px;
+  height: 559px;
+  background: url(https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/banner.svg) no-repeat top center;
+  position: absolute;
+  background-size: contain;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.choice {
+  padding: 200px 20px 0;
+  position: relative;
+}
+
+.choice::after {
+  content: "";
+  background: url(https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/ball03.svg) no-repeat center right;
+  position: absolute;
+  background-size: cover;
+  bottom: 20%;
+  left: 0;
+  z-index: -2;
+  width: 94px;
+  height: 361px;
+}
+
+.choice .choicePlan {
+  padding-top: 40px;
+}
+
+.choice_num {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.choice_num .c_btn {
+  margin: 0 8px;
+}
+
+.choice .planDeta_box {
+  padding: 40px 0;
+}
+
+.choice .planDeta_box .d_flex {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.choice .planDeta_item {
+  background-color: #fff;
+  -webkit-box-shadow: 0 2px 10px 0 #00000014;
+          box-shadow: 0 2px 10px 0 #00000014;
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.choice .planDeta_item:first-child {
+  margin-right: 21px;
+}
+
+.choice .planDeta_item .fz-h3 {
+  line-height: 35px;
+  padding-top: 16px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.choice .planDeta_item .line {
+  margin-top: 16px;
+}
+
+.choice .planDeta_item .planDeta_info {
+  padding: 0 23px;
+}
+
+.choice .planDeta_item .font-default {
+  padding-top: 32px;
+  text-align: center;
+  color: #221E1F;
+}
+
+.choice .planDeta_item .NumBox {
+  padding-top: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.choice .planDeta_item .NumBox_item {
+  padding: 24px;
+  border-radius: 12px;
+  background-color: #F5F5F5;
+  text-align: center;
+}
+
+.choice .planDeta_item .NumBox .fz-h2 {
+  padding-top: 8px;
+}
+
+.choice .planDeta_item .NumBox .fz-h2 span {
+  padding-left: 8px;
+}
+
+.choice .planDeta_item .NumBox .equarl {
+  margin: 0 21px;
+  font-size: 29px;
+  font-weight: 700;
+}
+
+.choice .planDeta_item .infoList {
+  padding-top: 32px;
+}
+
+.choice .planDeta_item .infoList_item {
+  padding-left: 32px;
+  padding-bottom: 20px;
+  line-height: 24px;
+  position: relative;
+}
+
+.choice .planDeta_item .infoList_item::before {
+  content: "";
+  width: 20px;
+  height: 16px;
+  background: url(https://hexschool.github.io/webLayoutTraining1st/chatTalker_images//icon_check.svg) no-repeat center center;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.choice .planDeta_item .c_btn {
+  margin-top: 32px;
+  max-width: 136px;
+  margin-bottom: 38px;
+}
+
+.faq {
+  padding: 100px 20px;
+}
+
+.faq .faqList {
+  padding-top: 48px;
+}
+
+.faq .faqList_item {
+  border-radius: 12px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 2px 10px 0 #00000014;
+          box-shadow: 0 2px 10px 0 #00000014;
+  margin-bottom: 16px;
+}
+
+.faq .faqList_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 16px 32px;
+}
+
+.faq .faqList_title.active .fz-h5 {
+  color: #56C4C5;
+}
+
+.faq .faqList_title.active .i_plus {
+  background: url(https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/icon_minus.svg) no-repeat center center;
+}
+
+.faq .faqList_title .fz-h5 {
+  line-height: 28px;
+  color: #221E1F;
+}
+
+.faq .faqList_title .i_plus {
+  width: 20px;
+  height: 20px;
+  background: url(https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/icon_plus.svg) no-repeat center center;
+}
+
+.faq .faqList_info {
+  padding: 8px 32px 32px;
+  display: none;
+}
+
+.faq .faqList_info.show {
+  display: block;
+}
+
+.faq .faqList_info .font-default {
+  padding-top: 0;
+}
+
+/*----------------------------
+desktop    -> max-width: 992px
+pad        -> max-width: 768px
+mobile_lg  -> max-width: 414px
+mobile     -> max-width: 375px
+mobile_s   -> max-width: 320px
+----------------------------*/
+@media (max-width: 768px) {
+  h1,
+  .fz-h1 {
+    font-size: 32px;
+  }
+  h2,
+  .fz-h2 {
+    font-size: 28px;
+  }
+  h4,
+  .fz-h4 {
+    font-size: 18px;
+  }
+  h5,
+  .fz-h5 {
+    font-size: 16px;
+  }
+  h6,
+  .fz-h6 {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .font-default {
+    font-size: 14px;
+    line-height: 26px;
+  }
+}
+
+/*-----------------TODO: index-----------------------*/
+@media (max-width: 1100px) {
+  .introduce .d_flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .introduce .d_flex .introduce_list {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .introduce .d_flex .introduce_list .d_flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .introduce_info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    padding-left: 0px;
+    padding-bottom: 30px;
+  }
+  .introduce_info .c_title {
+    text-align: center;
+  }
+  .introduce_list {
+    width: 60%;
+  }
+}
+
+@media (max-width: 992px) {
+  .introduce_list {
+    width: 70%;
+  }
+  .choice_num {
+    overflow-x: auto;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  .choice_num::-webkit-scrollbar {
+    display: none;
+  }
+  .choice_num .c_btn {
+    margin: 0px 8px 10px 8px;
+    padding: 10px;
+  }
+  .choice .planDeta_box .d_flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .choice .planDeta_item {
+    width: 100%;
+  }
+  .choice .planDeta_item:first-child {
+    margin-right: 0px;
+    margin-bottom: 40px;
+  }
+  .choice .planDeta_item .infoList {
+    padding-top: 32px;
+  }
+  .choice .planDeta_item .infoList_item {
+    font-size: 12px;
+  }
+  .choice .planDeta_item .infoList_item::before {
+    background-size: 16px;
+    top: 4px;
+  }
+  .choice .planDeta_item .NumBox {
+    padding-top: 24px;
+  }
+  .choice .planDeta_item .NumBox .fz-h2 span {
+    padding-left: 4px;
+  }
+  .choice .planDeta_item .NumBox .equarl {
+    margin: 0 6px;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0 20px;
+    background: #fff;
+    border-bottom: 3px solid #FFD153;
+  }
+  .header_box .logo {
+    max-width: 130px;
+  }
+  .banner_bg {
+    display: none;
+  }
+  .banner {
+    padding: 20px;
+  }
+  .banner::after {
+    background-size: cover;
+    bottom: -350px;
+    width: 49px;
+    height: 126px;
+  }
+  .banner .d_flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .banner_img {
+    position: relative;
+  }
+  .banner_img::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url(https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/bg_home_sm.svg) no-repeat center center;
+    position: absolute;
+    background-size: contain;
+    bottom: 0;
+    left: 0;
+    z-index: -2;
+  }
+  .social_list .d_flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .social li {
+    width: 100%;
+  }
+  .social li:not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 40px;
+  }
+  .person .person_list .d_flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .person .person_list li {
+    width: 100%;
+    height: 100%;
+  }
+  .person .person_list li:not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 40px;
+  }
+  .introduce_list {
+    width: 50%;
+  }
+  .introduce_list .d_flex {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .introduce_list li {
+    width: 100%;
+    max-width: 100%;
+  }
+  .introduce_list li:nth-child(odd) {
+    margin-right: 0px;
+  }
+  .introduce_info {
+    width: 100%;
+  }
+  .introduce_info .c_title {
+    text-align: left;
+  }
+  .introduce_info .fz-h5 {
+    padding-top: 16px;
+    line-height: 26px;
+  }
+  .introduce_info .c_btn {
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 414px) {
+  .planBanner_img {
+    width: 100%;
+    height: 495px;
+    background: url(https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/banner_sm.svg) no-repeat center center;
+    top: 50px;
+  }
+  .planBanner_info {
+    margin: 50px 0;
+  }
+  .introduce_list {
+    width: 100%;
+  }
+  .introduce_info {
+    padding-left: 0px;
+  }
+  .start .d_flex {
+    padding: 300px 20px 50px;
+  }
+  .start .d_flex .c_btn {
+    margin-top: 20px;
+  }
+  .start.start_bg {
+    background: url(../images/star_bg_mobile.png) no-repeat center center;
+    height: 461px;
+    background-size: cover;
+  }
+  .choice .planDeta_item .planDeta_info {
+    padding: 0 16px;
+  }
+  .choice .planDeta_item .NumBox_item {
+    padding: 24px 16px;
+  }
+  .c_title {
+    font-size: 24px;
+    line-height: 40px;
+  }
+  .c_subTitle {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+/*# sourceMappingURL=all.css.map */

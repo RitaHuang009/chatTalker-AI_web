@@ -58,6 +58,7 @@ mobile_s   -> max-width: 320px
                 text-align: center;
             }
         }
+
         &_list {
             width: 60%;
         }
@@ -65,6 +66,11 @@ mobile_s   -> max-width: 320px
 }
 
 @include desktop {
+    .introduce{
+        &_list {
+            width: 70%;
+        }
+    }
     // planDescripition
     .choice {
         &_num {
@@ -116,11 +122,22 @@ mobile_s   -> max-width: 320px
 }
 
 @include pad {
+    .header {
+        padding: 0 20px;
+        background: #fff;
+        border-bottom: 3px solid $secondary;
+        &_box {
+            .logo {
+                max-width: 130px;
+            }
+        }
+    }
     // index
     .banner_bg {
         display: none;
     }
     .banner {
+        padding: 20px;
         &::after {
             background-size: cover;
             bottom: -350px;
@@ -177,7 +194,7 @@ mobile_s   -> max-width: 320px
     }
     .introduce {
         &_list {
-            width: 100%;
+            width: 50%;
             .d_flex {
                 flex-wrap: wrap;
             }
@@ -191,7 +208,6 @@ mobile_s   -> max-width: 320px
         }
         &_info {
             width: 100%;
-            padding-left: 60px;
             .c_title {
                 text-align: left;
             }
@@ -207,16 +223,6 @@ mobile_s   -> max-width: 320px
 }
 
 @include mobile_lg {
-    .header {
-        padding: 0 20px;
-        background: #fff;
-        border-bottom: 3px solid $secondary;
-        &_box {
-            .logo {
-                max-width: 130px;
-            }
-        }
-    }
 
     .planBanner {
         &_img {
@@ -232,6 +238,9 @@ mobile_s   -> max-width: 320px
     }
 
     .introduce {
+        &_list {
+            width: 100%;
+        }
         &_info {
             padding-left: 0px;
         }
@@ -240,19 +249,38 @@ mobile_s   -> max-width: 320px
     .start {
         .d_flex {
             padding: 300px 20px 50px;
+            .c_btn{
+                margin-top: 20px;
+            }
+        }
+        &.start_bg {
+            background: url(../images/star_bg_mobile.png) no-repeat
+                center center;
+            height: 461px;
+            background-size: cover;
         }
     }
 
-    .choice{
-        .planDeta_item{
+    .choice {
+        .planDeta_item {
             .planDeta_info {
                 padding: 0 16px;
             }
-            .NumBox{
+            .NumBox {
                 &_item {
                     padding: 24px 16px;
                 }
             }
         }
+    }
+
+    .c_title {
+        font-size: 24px;
+        line-height: 40px;
+    }
+
+    .c_subTitle {
+        font-size: 16px;
+        line-height: 24px;
     }
 }
