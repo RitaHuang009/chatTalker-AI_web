@@ -1223,6 +1223,8 @@ mobile_s   -> max-width: 320px
     width: 60%; } }
 
 @media (max-width: 992px) {
+  .introduce_list {
+    width: 70%; }
   .choice_num {
     overflow-x: auto;
     -webkit-box-pack: unset;
@@ -1259,30 +1261,38 @@ mobile_s   -> max-width: 320px
         font-size: 24px; } }
 
 @media (max-width: 768px) {
+  .header {
+    padding: 0 20px;
+    background: #fff;
+    border-bottom: 3px solid #FFD153; }
+    .header_box .logo {
+      max-width: 130px; }
   .banner_bg {
     display: none; }
-  .banner::after {
-    background-size: cover;
-    bottom: -350px;
-    width: 49px;
-    height: 126px; }
-  .banner .d_flex {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-  .banner_img {
-    position: relative; }
-    .banner_img::after {
-      content: "";
-      width: 100%;
-      height: 100%;
-      background: url(https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/bg_home_sm.svg) no-repeat center center;
-      position: absolute;
-      background-size: contain;
-      bottom: 0;
-      left: 0;
-      z-index: -2; }
+  .banner {
+    padding: 20px; }
+    .banner::after {
+      background-size: cover;
+      bottom: -350px;
+      width: 49px;
+      height: 126px; }
+    .banner .d_flex {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+    .banner_img {
+      position: relative; }
+      .banner_img::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: url(https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/bg_home_sm.svg) no-repeat center center;
+        position: absolute;
+        background-size: contain;
+        bottom: 0;
+        left: 0;
+        z-index: -2; }
   .social_list .d_flex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1305,7 +1315,7 @@ mobile_s   -> max-width: 320px
       margin-right: 0px;
       margin-bottom: 40px; }
   .introduce_list {
-    width: 100%; }
+    width: 50%; }
     .introduce_list .d_flex {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
@@ -1315,8 +1325,7 @@ mobile_s   -> max-width: 320px
       .introduce_list li:nth-child(odd) {
         margin-right: 0px; }
   .introduce_info {
-    width: 100%;
-    padding-left: 60px; }
+    width: 100%; }
     .introduce_info .c_title {
       text-align: left; }
     .introduce_info .fz-h5 {
@@ -1326,12 +1335,6 @@ mobile_s   -> max-width: 320px
       margin-top: 24px; } }
 
 @media (max-width: 414px) {
-  .header {
-    padding: 0 20px;
-    background: #fff;
-    border-bottom: 3px solid #FFD153; }
-    .header_box .logo {
-      max-width: 130px; }
   .planBanner_img {
     width: 100%;
     height: 495px;
@@ -1339,13 +1342,27 @@ mobile_s   -> max-width: 320px
     top: 50px; }
   .planBanner_info {
     margin: 50px 0; }
+  .introduce_list {
+    width: 100%; }
   .introduce_info {
     padding-left: 0px; }
   .start .d_flex {
     padding: 300px 20px 50px; }
+    .start .d_flex .c_btn {
+      margin-top: 20px; }
+  .start.start_bg {
+    background: url(../images/star_bg_mobile.png) no-repeat center center;
+    height: 461px;
+    background-size: cover; }
   .choice .planDeta_item .planDeta_info {
     padding: 0 16px; }
   .choice .planDeta_item .NumBox_item {
-    padding: 24px 16px; } }
+    padding: 24px 16px; }
+  .c_title {
+    font-size: 24px;
+    line-height: 40px; }
+  .c_subTitle {
+    font-size: 16px;
+    line-height: 24px; } }
 
 /*# sourceMappingURL=all.css.map */
