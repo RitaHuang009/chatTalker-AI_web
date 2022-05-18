@@ -31,21 +31,11 @@ $(function () {
   });
 
 
-  // FQA
-  $(".faqList_item").on("click", event => {
+  // FAQ
+  $(".faqList_item").click(function () {
     let me = event.currentTarget;
-
-    const ta = $(".faqList_item div:first-child")
-    console.log(ta,!me)
-
-
-    if (me) {
-      $(me).find(".faqList_info").slideToggle();
-      $(me).find(".faqList_title").toggleClass("active");
-    } else {
-      ta.removeClass("active");
-    }
-
+    $(me).find(".faqList_info").slideToggle();
+    $(me).find(".faqList_title").toggleClass("active");
   });
 
 
