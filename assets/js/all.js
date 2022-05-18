@@ -5,12 +5,13 @@ $(function () {
   $("#evaluate_list").flexslider({
     slideshowSpeed: 2000,
     animation: "silde",
-    animationLoop: true,
-    slideshow: true,
+    startAt: 1,
+    // animationLoop: true,
+    // slideshow: true,
     animationSpeed: 500,
     touch: true,
-    itemWidth: 352,
-    itemMargin: 16
+    itemWidth: 350,
+    itemMargin: 8
   });
   /* GoTop btn */
 
@@ -21,16 +22,20 @@ $(function () {
     return false;
   });
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 400) {
-      $("#goTop").attr("style", "opacity:1;");
-    } else {
-      $("#goTop").attr("style", "opacity:0;");
-    }
-  });
-  $(".faqList_item").click(function () {
+    $("#goTop").css("opacity", $(this).scrollTop() > 400 ? 1 : 0);
+  }); // FQA
+
+  $(".faqList_item").on("click", function (event) {
     var me = event.currentTarget;
-    $(me).find(".faqList_info").slideToggle();
-    $(me).find(".faqList_title").toggleClass("active");
+    var ta = $(".faqList_item div:first-child");
+    console.log(ta, !me);
+
+    if (me) {
+      $(me).find(".faqList_info").slideToggle();
+      $(me).find(".faqList_title").toggleClass("active");
+    } else {
+      ta.removeClass("active");
+    }
   });
 });
 "use strict";
