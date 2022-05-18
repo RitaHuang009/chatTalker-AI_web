@@ -23,19 +23,12 @@ $(function () {
   });
   $(window).scroll(function () {
     $("#goTop").css("opacity", $(this).scrollTop() > 400 ? 1 : 0);
-  }); // FQA
+  }); // FAQ
 
-  $(".faqList_item").on("click", function (event) {
+  $(".faqList_item").click(function () {
     var me = event.currentTarget;
-    var ta = $(".faqList_item div:first-child");
-    console.log(ta, !me);
-
-    if (me) {
-      $(me).find(".faqList_info").slideToggle();
-      $(me).find(".faqList_title").toggleClass("active");
-    } else {
-      ta.removeClass("active");
-    }
+    $(me).find(".faqList_info").slideToggle();
+    $(me).find(".faqList_title").toggleClass("active");
   });
 });
 "use strict";
