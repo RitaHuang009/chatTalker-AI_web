@@ -232,23 +232,23 @@
         height: 150px;
     }
     &_list {
-        max-width: 1100px;
+        max-width: 1088px;
         padding-top: 48px;
         .d_flex {
             align-items: center;
         }
         .evaluate_card {
             position: relative;
-            margin: 50px 0 20px;
+            margin: 50px 10px 20px !important;
             background-color: $white;
             box-shadow: 0 2px 10px 0 #00000014;
             border-radius: 12px;
             padding: 30px 20px 20px;
-            min-width: 352px;
+            width: calc( ( 1088px - 56px ) / 3) !important;
             box-sizing: border-box;
-            &:first-child {
-                margin-left: 5px;
-            }
+            // &:first-child {
+            //     margin-left: 5px;
+            // }
         }
         .evaluate_img {
             position: absolute;
