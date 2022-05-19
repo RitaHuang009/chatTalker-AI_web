@@ -6,12 +6,12 @@ $(function () {
     slideshowSpeed: 2000,
     animation: "silde",
     startAt: 1,
-    // animationLoop: true,
-    // slideshow: true,
     animationSpeed: 500,
     touch: true,
     itemWidth: 350,
-    itemMargin: 8
+    itemMargin: 0,
+    minItems: 3,
+    maxItems: 3
   });
   /* GoTop btn */
 
@@ -27,7 +27,9 @@ $(function () {
 
   $(".faqList_item").click(function () {
     var me = event.currentTarget;
-    $(me).find(".faqList_info").slideToggle();
+    $(".faqList_info").slideUp();
+    $(".faqList_title").removeClass("active");
+    $(me).find(".faqList_info").stop().slideToggle();
     $(me).find(".faqList_title").toggleClass("active");
   });
 });
