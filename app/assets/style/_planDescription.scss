@@ -10,7 +10,7 @@
 }
 
 .planBanner {
-    padding: 0 20px;
+    margin-top: 100px;
     &_info {
         color: $black-txt;
         margin: 100px 0;
@@ -28,7 +28,7 @@
         background: url(https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/banner.svg) no-repeat top
             center;
         position: absolute;
-        background-size: contain;
+        background-size: cover;
         right: 0;
         top: 0;
         z-index: -1;
@@ -36,7 +36,7 @@
 }
 
 .choice {
-    padding: 200px 20px 0;
+    margin-top: 100px;
     position: relative;
     &::after {
         content: "";
@@ -145,7 +145,7 @@
 }
 
 .faq {
-    padding: 100px 20px;
+    margin: 100px 0;
     .faqList {
         padding-top: 48px;
         &_item {

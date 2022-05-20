@@ -25,15 +25,13 @@ img {
 }
 
 .container {
-    width: 100%;
+    // width: 100%;
+    max-width: 1088px;
     height: auto;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
-.wrapper {
-    max-width: 1088px;
-    margin: 0 auto;
-}
 
 .w_100 {
     width: 100%;
@@ -44,32 +42,30 @@ img {
 }
 
 //*-------- fontsize --------*//
-h1,
 .fz-h1 {
     font-size: $font-h1; //48px
 }
 
-h2,
 .fz-h2 {
     font-size: $font-h2; //32px
 }
 
-h3,
+
 .fz-h3 {
     font-size: $font-h3; //24px
 }
 
-h4,
+
 .fz-h4 {
     font-size: $font-h4; //20px
 }
 
-h5,
+
 .fz-h5 {
     font-size: $font-h5; //18px
 }
 
-h6,
+
 .fz-h6 {
     font-size: $font-h6; //14px
     line-height: 21px;

@@ -10,7 +10,6 @@
 }
 
 .banner {
-    padding: 0 20px;
     &::after {
         content: "";
         background: url(https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/ball01.svg) no-repeat center
@@ -49,7 +48,7 @@
 }
 
 .social {
-    padding: 200px 20px 0;
+    margin-top: 100px;
     &_list {
         padding-top: 48px;
         .d_flex {
@@ -81,7 +80,7 @@
 }
 
 .person {
-    padding: 100px 20px 0;
+    margin-top: 100px;
     position: relative;
     &::after {
         content: "";
@@ -140,7 +139,7 @@
 }
 
 .introduce {
-    padding: 100px 20px 0;
+    margin-top: 100px;
     .d_flex {
         align-items: center;
         justify-content: space-between;
@@ -217,7 +216,7 @@
 }
 
 .evaluate {
-    padding: 100px 20px 100px;
+    margin-top: 100px;
     position: relative;
     &::after {
         content: "";
@@ -225,7 +224,7 @@
             left;
         background-size: 150px;
         position: absolute;
-        top: 130px;
+        top: 50px;
         left: 100px;
         z-index: -2;
         width: 150px;
@@ -305,6 +304,7 @@
 }
 
 .start {
+    margin-top: 100px;
     position: relative;
     .d_flex {
         flex-direction: column;
