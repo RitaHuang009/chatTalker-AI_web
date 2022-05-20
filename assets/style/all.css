@@ -151,13 +151,10 @@ img {
   height: auto; }
 
 .container {
-  width: 100%;
-  height: auto;
-  margin: 0 auto; }
-
-.wrapper {
   max-width: 1088px;
-  margin: 0 auto; }
+  height: auto;
+  margin: 0 auto;
+  padding: 0 20px; }
 
 .w_100 {
   width: 100%; }
@@ -165,27 +162,21 @@ img {
 .h_100 {
   height: 100%; }
 
-h1,
 .fz-h1 {
   font-size: 48px; }
 
-h2,
 .fz-h2 {
   font-size: 32px; }
 
-h3,
 .fz-h3 {
   font-size: 24px; }
 
-h4,
 .fz-h4 {
   font-size: 20px; }
 
-h5,
 .fz-h5 {
   font-size: 18px; }
 
-h6,
 .fz-h6 {
   font-size: 14px;
   line-height: 21px; }
@@ -685,42 +676,43 @@ html[xmlns] .flexslider .slides {
   right: 0;
   z-index: -2; }
 
-.banner {
-  padding: 0 20px; }
-  .banner::after {
-    content: "";
-    background: url(https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/ball01.svg) no-repeat center right;
-    position: absolute;
-    bottom: -200px;
-    left: 0;
-    z-index: -2;
-    width: 138px;
-    height: 360px; }
-  .banner .d_flex {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-  .banner_info {
-    width: 100%;
-    color: #221E1F; }
-    .banner_info .fz-5 {
-      color: #56C4C5;
-      line-height: 26px; }
-    .banner_info .fz-h1 {
-      padding-top: 8px;
-      line-height: 70px; }
-    .banner_info .fz-4 {
-      padding-top: 16px;
-      line-height: 29px; }
-  .banner_img {
-    width: 100%;
-    max-width: 532px; }
+.banner::after {
+  content: "";
+  background: url(https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/ball01.svg) no-repeat center right;
+  position: absolute;
+  bottom: -200px;
+  left: 0;
+  z-index: -2;
+  width: 138px;
+  height: 360px; }
+
+.banner .d_flex {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.banner_info {
+  width: 100%;
+  color: #221E1F; }
+  .banner_info .fz-5 {
+    color: #56C4C5;
+    line-height: 26px; }
+  .banner_info .fz-h1 {
+    padding-top: 8px;
+    line-height: 70px; }
+  .banner_info .fz-4 {
+    padding-top: 16px;
+    line-height: 29px; }
+
+.banner_img {
+  width: 100%;
+  max-width: 532px; }
 
 .social {
-  padding: 200px 20px 0; }
+  margin-top: 100px; }
   .social_list {
     padding-top: 48px; }
     .social_list .d_flex {
@@ -755,7 +747,7 @@ html[xmlns] .flexslider .slides {
       text-align: center; }
 
 .person {
-  padding: 100px 20px 0;
+  margin-top: 100px;
   position: relative; }
   .person::after {
     content: "";
@@ -813,7 +805,7 @@ html[xmlns] .flexslider .slides {
         line-height: 24px; }
 
 .introduce {
-  padding: 100px 20px 0; }
+  margin-top: 100px; }
   .introduce .d_flex {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -882,14 +874,14 @@ html[xmlns] .flexslider .slides {
       max-width: 136px; }
 
 .evaluate {
-  padding: 100px 20px 100px;
+  margin-top: 100px;
   position: relative; }
   .evaluate::after {
     content: "";
     background: url(https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/ball03.svg) no-repeat center left;
     background-size: 150px;
     position: absolute;
-    top: 130px;
+    top: 50px;
     left: 100px;
     z-index: -2;
     width: 150px;
@@ -961,6 +953,7 @@ html[xmlns] .flexslider .slides {
           background: url(https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/icon_star.svg) no-repeat center center; }
 
 .start {
+  margin-top: 100px;
   position: relative; }
   .start .d_flex {
     -webkit-box-orient: vertical;
@@ -991,7 +984,7 @@ html[xmlns] .flexslider .slides {
   z-index: -2; }
 
 .planBanner {
-  padding: 0 20px; }
+  margin-top: 100px; }
   .planBanner_info {
     color: #221E1F;
     margin: 100px 0; }
@@ -1005,13 +998,13 @@ html[xmlns] .flexslider .slides {
     height: 559px;
     background: url(https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/banner.svg) no-repeat top center;
     position: absolute;
-    background-size: contain;
+    background-size: cover;
     right: 0;
     top: 0;
     z-index: -1; }
 
 .choice {
-  padding: 200px 20px 0;
+  margin-top: 100px;
   position: relative; }
   .choice::after {
     content: "";
@@ -1118,7 +1111,7 @@ html[xmlns] .flexslider .slides {
       margin-bottom: 38px; }
 
 .faq {
-  padding: 100px 20px; }
+  margin: 100px 0; }
   .faq .faqList {
     padding-top: 48px; }
     .faq .faqList_item {
@@ -1165,19 +1158,14 @@ mobile     -> max-width: 375px
 mobile_s   -> max-width: 320px
 ----------------------------*/
 @media (max-width: 768px) {
-  h1,
   .fz-h1 {
     font-size: 32px; }
-  h2,
   .fz-h2 {
     font-size: 28px; }
-  h4,
   .fz-h4 {
     font-size: 18px; }
-  h5,
   .fz-h5 {
     font-size: 16px; }
-  h6,
   .fz-h6 {
     font-size: 12px;
     line-height: 18px; }
@@ -1337,6 +1325,7 @@ mobile_s   -> max-width: 320px
     width: 100%;
     height: 495px;
     background: url(https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/banner_sm.svg) no-repeat center center;
+    background-size: cover;
     top: 50px; }
   .planBanner_info {
     margin: 50px 0; }

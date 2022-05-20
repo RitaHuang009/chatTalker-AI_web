@@ -10,7 +10,7 @@ $(function () {
     touch: true,
     itemWidth: 350,
     itemMargin: 0,
-    minItems: 3,
+    minItems: 1,
     maxItems: 3
   });
   /* GoTop btn */
@@ -26,11 +26,10 @@ $(function () {
   }); // FAQ
 
   $(".faqList_item").click(function () {
-    var me = event.currentTarget;
-    $(".faqList_info").slideUp();
-    $(".faqList_title").removeClass("active");
-    $(me).find(".faqList_info").stop().slideToggle();
-    $(me).find(".faqList_title").toggleClass("active");
+    $(this).find(".faqList_info").slideToggle();
+    $(this).find(".faqList_title").toggleClass("active");
+    $(this).siblings().find(".faqList_title").removeClass('active');
+    $(this).siblings().find(".faqList_info").slideUp();
   });
 });
 "use strict";
